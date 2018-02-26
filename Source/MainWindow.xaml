@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CRG Timer ( 24 hour format )" Height="224" Width="384" Background="Salmon" Foreground="White" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Time:" Height="28" HorizontalAlignment="Left" Name="label1" VerticalAlignment="Center" />
+        <TextBox Grid.Row="0" Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="txtbtime" VerticalAlignment="Center" Width="120" />
+        <Button Grid.Row="0" Grid.Column="3" Content="x" Height="23" HorizontalAlignment="Left" Name="cmbclose" Click="cmbclose_Click" VerticalAlignment="Top" Width="23" Grid.RowSpan="2" />
+        <CheckBox Grid.Row="1" Grid.Column="0" Content=" Set alarm in:" Height="16" HorizontalAlignment="Left" Name="checkBox1" Click="checkBox1_Click" VerticalAlignment="Center" Width="88" />
+        <TextBox Grid.Row="1" Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="txtbmin" VerticalAlignment="Center" Width="38" />
+        <Label Grid.Row="1" Grid.Column="1" Content="min." Height="28" HorizontalAlignment="Left" Name="label2" VerticalAlignment="Center" Width="31" Margin="48,0,0,0" />
+        <CheckBox Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" Content=" Set alarm to time:  hrs =" Height="16" HorizontalAlignment="Left" Name="checkBox2" Click="checkBox2_Click" VerticalAlignment="Center" />
+        <TextBox Grid.Row="2" Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="txtbseth" VerticalAlignment="Center" Width="38" Margin="62,2,0,2" />
+        <Label Grid.Row="2" Grid.Column="1" Content="min =" Height="28" HorizontalAlignment="Center" Name="label3" VerticalAlignment="Top" Margin="106,0,29,0" />
+        <TextBox Grid.Row="2" Grid.Column="1" Height="23" HorizontalAlignment="Right" Name="txtbsetm" VerticalAlignment="Center" Width="38" Margin="0,2,68,2" Grid.ColumnSpan="2" />
+        <Rectangle Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Height="52" HorizontalAlignment="Left" Name="rectangle1" Stroke="White" VerticalAlignment="Center" Width="260" />
+        <Button Grid.Row="3" Grid.Column="0" Content="Set" Height="25" HorizontalAlignment="Center" Name="cmbset" Click="cmbset_Click" VerticalAlignment="Center" Width="75" />
+        <TextBox Grid.Row="3" Grid.Column="1" Height="23" HorizontalAlignment="Left" Name="txtbcnt" VerticalAlignment="Center" Width="120" />
+        <Button Grid.Row="3" Grid.Column="2" Content="Tst. alarm" Height="20" HorizontalAlignment="Left" Name="cmbtst" Click="cmbtst_Click" VerticalAlignment="Top" Width="75" Margin="0,13,0,0" />
+        <Button Grid.Row="3" Grid.Column="2" Content="Stop alarm" Height="20" HorizontalAlignment="Left" Name="cmbstop" Click="cmbstop_Click" VerticalAlignment="Bottom" Width="75" Margin="0,0,0,13" />
+        <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" MinWidth="300" Content="" Height="28" HorizontalAlignment="Center" Name="lblAlert" VerticalAlignment="Center" Background="Red" Padding="5" Margin="0,2,0,4" UseLayoutRounding="False" />
+    </Grid>
+</Window>
