@@ -18,6 +18,6 @@ Wpf on msdn.microsoft.com.
 Project full name: 'Wpf timer with sound'
 Official name: 'CRGTimer'
 Version: 1.2.0
-crgames.elementfx.com
+http://crgames.elementfx.com
 
 C.R.G. 2018
